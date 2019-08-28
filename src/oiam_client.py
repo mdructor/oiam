@@ -5,11 +5,10 @@
 # Mason Dructor August 2019
 
 import requests
-import pyperclip
 
 # server address
-URL = 'http://localhost:8080'
+URL = 'http://10.128.0.2:8080'
 
 data = requests.get(URL).text # request data from the URL
-pyperclip.copy(data) # copy data to system clipboard
+print(data) # copy data to system clipboard
 
