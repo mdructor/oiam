@@ -24,14 +24,14 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     bar = fill * filledLength + '-' * (length - filledLength)
     print('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix), end = '\r')
     # Print New Line on Complete
-    if iteration == total: 
+    if iteration == total:
         print()
 
 # server address
 URL = 'http://35.239.61.141:8000'
 
 def test():
-    test_count = 10 
+    test_count = 10
     test_size = 1000
     printProgressBar(0, test_size, prefix = 'Test Progress:', suffix = 'Complete', length = 50)
     for i in range(test_count):
@@ -39,7 +39,7 @@ def test():
         for j in range(test_size):
             r = requests.get(URL)
             if r.status_code == 200:
-                test_array.append(int(requests.get(URL).text))
+                test_array.append(r.text)
                 printProgressBar(len(test_array), test_size, prefix = 'Test Progress:', suffix = 'Complete', length = 50)
             else:
                 j -= 1
