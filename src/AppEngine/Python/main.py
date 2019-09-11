@@ -22,9 +22,9 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    return str(randint( 1, 1000001))
+def oiam():
+    # return random number between 1 and a million
+    return str(randint(1, 1000001))
 
 
 @app.errorhandler(500)
