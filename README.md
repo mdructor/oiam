@@ -15,12 +15,25 @@ The Java version is using `tomcat` on AppEngine and Sun's `HttpServer` on the vm
 All of the programs behave relatively the same, and can be accessed via
 the following URLS:
 
-AppEnginePython URL
+* https://one-in-a-million252417.appspot.com
 
-AppEngine JAVA URL
+* https://one-in-a-million-251918.appspot.com
 
-VM Python URL
+* http://35.239.61.141:8080
 
-VM Java URl
+* http://35.239.61.141:8000
 
 ### Process
+
+For running the virtual machine, we opened a Tmux session and detached from it so that our web servers would be running all of the time. Below you can see the Tmux session running the java web server (left) and python web server (right) simultaneously:
+![tmux](screenshots/tmux.png)
+
+
+Afterwards, we had to configure our VM's firewall settings so that our web servers were listening on ports 8000 and 8080. 
+![firewall](screenshots/firewall.png)
+
+You can see both running in a web browser below:
+#### Python VM
+![python vm](screenshots/python-vm.png)
+#### Java VM
+![java vm](screenshots/java-vm.png)
