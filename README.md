@@ -1,38 +1,25 @@
 # oiam
 ## one in a million
 
-`oiam` is an extremely simple server/client application. 
+`oiam` is a simple server/client application. 
 
-The server generates and serves a random number from 1-1,000,000 (inclusive) on each request.
+On every request, it generates a random number between 1 and 1,000,000 (inclusive) and serves it.
 
-The client sends a request to the server, retrieves the data, and copies the number to the system clipboard.
+It is currently implemented as 4 different services, a python and java
+implementation running on a virtual machine on Gcloud, as well as a python and java version running on the AppEngine on Gloud.
 
-Both the client and server are in `python` and about 5-10 lines of code each.
+The python versions are using `flask` on AppEngine and `bottle` on the vm.
 
-The server and client rely on the following `python` dependencies (all easily installable via `pip`):
+The Java version is using `tomcat` on AppEngine and Sun's `HttpServer` on the vm.
 
-`bottle`
+All of the programs behave relatively the same, and can be accessed via
+the following URLS:
 
-`requests`
+AppEnginePython URL
 
-`pyperclip`
+AppEngine JAVA URL
 
-After installing the dependencies, you can run `oiam` by
+VM Python URL
 
-1) Running the server
-
-    `python oiam_server.py`
-
-2) Running the client
-
-    `python oiam_client.py`
-
-3) Paste your random number to see what you got! Everytime
-you run the client, a request for a new number will be sent and copied to 
-the clipboard.
-
-
-
-<sup><sub>All code and documentation produced by Mason Dructor<sup><sub>
-
+VM Java URl
 
