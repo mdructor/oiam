@@ -37,3 +37,12 @@ You can see both running in a web browser below:
 ![python vm](screenshots/python-vm.png)
 #### Java VM
 ![java vm](screenshots/java-vm.png)
+
+
+#### Testing
+All servers were tested using a python script that took 1000 requests
+from the server and looked for duplicates to test for randomness. We
+wanted less than 250 duplicates to pass the tests, although often
+the sets of 1000 have less than 2 duplicates.
+
+![testing](screenshots/testshot.png)
