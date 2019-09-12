@@ -38,7 +38,18 @@ You can see both running in a web browser below:
 #### Java VM
 ![java vm](screenshots/java-vm.png)
 
+Google's tutorials were very helpful in setting up our random number servers on the GCP App Engine. After creating a new project for both the Java and Python versions, we cloned the following Git repositories in our cloud shell for the 'Hello, World!' starter code:
+* https://github.com/GoogleCloudPlatform/python-docs-samples
+* https://github.com/GoogleCloudPlatform/appengine-try-java
 
+After modifying the code to print a random number, we used the `gcloud` commands to create and deploy our apps. Below is a screenshot of our app being deployed from the cloud shell:
+![tutorial](screenshots/tutorial.png)
+
+Once the apps were deployed, we were provided with the URLs for our projects. You can see both running in a web browser below:
+#### Python App Engine
+![python ae](screenshots/python-ae.png)
+#### Java App Engine
+![java ae](screenshots/java-ae.png)
 #### Testing
 All servers were tested using a python script that took 1000 requests
 from the server and looked for duplicates to test for randomness. We
