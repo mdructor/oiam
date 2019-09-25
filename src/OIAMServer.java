@@ -5,7 +5,7 @@ import java.net.InetSocketAddress;
 import java.util.Random;
 
 public class OIAMServer {
-	static final int port=5000;
+	static final int port=8000;
 
 	public static void main(String args[]) {
 		try {
