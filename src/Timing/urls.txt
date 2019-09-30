@@ -1,0 +1,4 @@
+https://timing-experiment.appspot.com
+https://random-timing.appspot.com
+http://35.195.133.24:8000
+http://35.195.133.24:8080
