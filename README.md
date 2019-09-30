@@ -77,9 +77,9 @@ destination ip, the random number generated, and the time it took to complete th
 
 Here is a sample of the reporting:
 
-'''
+```
 https://timing-experiment.appspot.com: request took 0.938020944595 seconds. Number: 87701
 https://random-timing.appspot.com: request took 0.696413993835 seconds. Number: 128315
 http://35.195.133.24:8000: request took 0.366611003876 seconds. Number: 839535
 http://35.195.133.24:8080: request took 0.245352983475 seconds. Number: 802824
-'''
+```
