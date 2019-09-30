@@ -69,7 +69,7 @@ We first moved over our dedicated VMs to the new region.  This was a straightfor
 
 Porting our `Java` and `python` `AppEngine` software was similarly straight-forward.  We created a new `AppEngine` instance for both projects, set to the new region, and used our existing code exactly as-is.
 
-![app engine region change] (screenshots/AppEngine.png)
+![app engine region change](screenshots/AppEngine.png)
 
 Our timing script is implemented in `python3` using the `requests` library. It reads all the ip's from a seperate file, `urls.txt`, each one separated by a
 new line. It times each request using the `timing` library and displays the
