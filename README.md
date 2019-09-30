@@ -57,3 +57,21 @@ wanted less than 250 duplicates to pass the tests, although often
 the sets of 1000 have less than 2 duplicates.
 
 ![testing](screenshots/testshot.png)
+
+## Timing
+As an extension of the requirements, we now host our software on
+`europe-west1`, zone 'b', as well as maintaining a module that times the 
+requests from a local ip to the new ip's of our software for reporting.
+
+We first moved over our dedicated VMs to the new region.  This was a straightforward port, we just created a new VM in the `europe-west1` region, zone `b`, installed `python3` and `default-JDK`, recompiled our projects and attached them both to HEADLESS `tmux` instances to run on our VM.
+
+![timing vm](screenshots/vm-regions.png)
+
+Porting our `Java` and `python` `AppEngine` software was similarly straight-forward.  We created a new `AppEngine` instance for both projects, set to the new region, and used our existing code exactly as-is.
+
+![app engine region change] (screenshots/AppEngine.png)
+
+Our timing script is implemented in `python3` using the `requests` library. It reads all the ip's from a seperate file, `urls.txt`, each one separated by a
+new line. It times each request using the `timing` library and displays the
+destination ip, the random number generated, and the time it took to complete the request.
+
