@@ -30,7 +30,7 @@ europe-west3_b_app_python@http://radom-timing-experiment.appspot.com
 europe-west3_b_app_java@http://java-dot-radom-timing-experiment.appspot.com
 europe-west3_b_vm_Java@http://35.246.243.145
 europe-west3_b_vm_Python@http://35.234.125.152
-europe-west6_a_VM_Java_@34.65.30.164
+europe-west6_a_VM_Java_@http://34.65.30.164
 southamerica-east1_a_VM_Python@http://34.95.171.137/
 europe-west4_a_VM_Python@http://35.204.2.146/
 asia-south1_a_VM_Python@http://34.93.13.81:8000/
@@ -115,4 +115,3 @@ asia-east2_a_VM_Python@http://35.220.139.138:5000/
 asia-east2_a_app_Python@http://experimentproject-254019.appspot.com/
 East-Asia1_a_app_Python@https://asian-four-men-one-shell.appspot.com
 East-Asia1_a_VM_Python@http://www.qazwsxedc.gq/
-
