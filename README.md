@@ -75,11 +75,14 @@ Our timing script is implemented in `python3` using the `requests` library. It r
 new line. It times each request using the `timing` library and displays the
 destination ip, the random number generated, and the time it took to complete the request.
 
-Here is a sample of the reporting:
+Our ip's are below:
+```
+europe-west1_b_app_python@timing-experiment.appspot.com/
+europe-west1_b_app_java@random-timing.appspot.com
+europe-west1_b_vm_Java@35.195.133.24:8000
+europe-west1_b_vm_Python@35.195.133.24:8080
+```
 
-```
-https://timing-experiment.appspot.com: request took 0.938020944595 seconds. Number: 87701
-https://random-timing.appspot.com: request took 0.696413993835 seconds. Number: 128315
-http://35.195.133.24:8000: request took 0.366611003876 seconds. Number: 839535
-http://35.195.133.24:8080: request took 0.245352983475 seconds. Number: 802824
-```
+You can find the reporting of all ip's posted in the canvas discussion [here](src/Timing/TimingResults.txt).
+
+
